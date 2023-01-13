@@ -11,7 +11,7 @@ $fake_allowed_host = $_SERVER['HTTP_HOST'];
 $config['debug'] = false;
 
 /* PHP/HTML file or URL used for bots */
-$config['default_white_page'] = 'https://projasaweb.com/social-media-marketing/';
+$config['default_white_page'] = 'white.php';
 
 /* PHP/HTML file or URL offer used for real users */
 $config['default_offer_page'] = 'offers.php';
