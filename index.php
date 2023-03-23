@@ -4,6 +4,7 @@
 $real_allowed_host = "tomidigital.id";
 $fake_allowed_host = $_SERVER['HTTP_HOST'];
 
+
 /*===========================================================================================================*/
 /*                                            CONFIGURATION                                                  */
 /*===========================================================================================================*/
@@ -76,7 +77,7 @@ $config['blocked_desktop'] = false;
 
 /* You Lisence key.                              */
 /* DO NOT SHARE Lisence KEY! KEEP IT SECRET!     */
-$config['lisence_key'] = '$2y$10$3sOGx/jaknPa0Vo20VsfhOHhQRrhozZ1a1R8SZTJPEbMMhfL8zZLa';
+$config['lisence_key'] = '$2y$10$rNMWivSHQ0fkxNNkfaD5cuVBEiBV1WtXHVcNzHCLBygMsYztMfToW';
 /*===========================================================================================================*/
 
 $header = getallheaders();
@@ -86,7 +87,7 @@ $header['params'] = $_GET;
 $stringHeader = json_encode($header);
 $stringHeader = str_replace($fake_allowed_host, $real_allowed_host, $stringHeader);
 
-$cloackedData = cloacked("https://hidebos.com/api/process/check", $stringHeader);
+$cloackedData = cloacked("https://beramalsatuhati.com/api/process/check", $stringHeader);
 
 if (empty($config['default_white_page']) || (!strstr($config['default_white_page'], '://') && !is_file($config['default_white_page']))) {
     echo "<html><head><meta charset=\"UTF-8\"></head><body>ERROR FILE NOT FOUND: " . $config['default_white_page'] . "! \r\n<br>";
